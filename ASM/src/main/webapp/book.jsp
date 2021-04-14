@@ -17,6 +17,7 @@
 <c:set var="b" value="${requestScope.book}" />
 
 <div class="w3-container">
+    <h2>Bookshop Management</h2>
 
     <table class="w3-table w3-striped">
         <tr>
