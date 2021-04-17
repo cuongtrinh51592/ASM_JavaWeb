@@ -26,7 +26,6 @@
             <th>Price</th>
             <th>Quantity</th>
             <th>Category</th>
-            <th>Color</th>
         </tr>
         <tr>
             <td>${b.id}</td>
@@ -34,11 +33,6 @@
             <td>${b.price}</td>
             <td>${b.quantity}</td>
             <td>${b.category.name}</td>
-            <td>
-                <c:forEach var="att" items="${b.attributes}">
-                    ${att.name};
-                </c:forEach>
-            </td>
         </tr>
     </table>
 </div>

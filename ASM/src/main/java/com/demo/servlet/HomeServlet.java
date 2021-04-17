@@ -17,7 +17,30 @@ public class HomeServlet extends HttpServlet {
     BookDao dao  = new BookDao();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+//        BookEntity book = new BookEntity();
+//        book.setName(request.getParameter("name"));
+//        String price = request.getParameter("price");
+//        int priceBook = 0;
+//        if (price != null) {
+//            priceBook = Integer.parseInt(price);
+//        }
+//        book.setPrice(priceBook);
+//
+//        String quantity = request.getParameter("quantity");
+//        int quantityBook = 0;
+//        if (quantity != null) {
+//            quantityBook = Integer.parseInt(quantity);
+//        }
+//        book.setQuantity(quantityBook);
+//        String categoryID = request.getParameter("categoryID");
+//        int categoryIDBook = 0;
+//        if (categoryID != null) {
+//            categoryIDBook = Integer.parseInt(categoryID);
+//        }
+//        book.setCategoryID(categoryIDBook);
+//
+//        dao.insertBook(book);
+//        doGet(request,response);
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
