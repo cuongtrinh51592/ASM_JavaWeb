@@ -19,7 +19,7 @@
 <div class="container">
     <div class="row">
         <h2 class="col-8 offset-2 text-center font-weight-bold my-3">Book Details</h2>
-        <a class="col-2 btn btn-primary align-self-center my-3" href="${pageContext.request.contextPath}/">Back</a>
+<%--        <a class="col-2 btn btn-primary align-self-center my-3" href="${pageContext.request.contextPath}/">Back</a>--%>
         <form class="col-12" action="${pageContext.request.contextPath}/create-book" method="post">
             <input type="hidden" name="id" value="${b.id}">
             <div class="form-group">
@@ -44,7 +44,8 @@
                 <input class="form-control" type="text" name="categoryID" value="${b.categoryID}">
             </div>
 
-            <button type="submit" class="btn btn-primary">Update</button>
+            <button type="submit" class="btn btn-primary">Create</button>
+            <a class="btn btn-info align-self-center" href="${pageContext.request.contextPath}/">Back</a>
         </form>
     </div>
 </div>

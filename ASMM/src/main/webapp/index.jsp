@@ -15,7 +15,7 @@
 </head>
 <body>
 <div class="w3-container">
-    <h2 class="col-8 offset-2 text-center font-weight-bold my-3">Book Management</h2>
+    <h1 style="text-align: center">Bookshop Management</h1>
     <c:url var="url" value="create-book">
         <c:param name="id" value="${b.id}"/>
     </c:url>
@@ -25,6 +25,7 @@
             <th>ID</th>
             <th>Name</th>
             <th>Price</th>
+            <th>Category</th>
             <th>Details</th>
             <th>Update</th>
             <th>Delete</th>
@@ -34,6 +35,7 @@
                 <td>${b.id}</td>
                 <td>${b.name}</td>
                 <td>${b.price}</td>
+                <td>${b.categoryEntity.name}</td>
                 <td>
                     <c:url var="url" value="book">
                         <c:param name="id" value="${b.id}"/>
@@ -48,7 +50,7 @@
                 </td>
                 <td>
                     <form class="m-0" action="${pageContext.request.contextPath}/book" method="post">
-                        <button name="id" value="${b.id}" class="button btn btn-primary" type="submit">Delete</button>
+                        <button name="id" value="${b.id}" class="button btn btn-danger" type="submit">Delete</button>
                     </form>
                 </td>
             </tr>
